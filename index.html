@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PLP Academy - Software Development Training for African Youth">
+    <link rel="stylesheet" href="style.css">
+    <title>PLP Academy</title>
+</head>
+
+<body>
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-nav">
+        <nav class="main-nav">
+            <a href="#">HOME</a>
+            <a href="#">ABOUT</a>
+            <a href="#">CONTACT</a>
+        </nav>
+    </header>
+    <!-- ***** Header Area End ***** -->
+
+    <!-- ***** Main Area Start ***** -->
+    <main>
+        <section>
+            <h1>Power Learn Project</h1>
+            <h3>Software Development - February 2025 - Cohort VII</h3>
+            <p>This course is meant to train young people from Africa, starting at a point of little experience to
+                fairly
+                skilled <br>software developers ready to get into the market place and jump on the next phase of their
+                learning at an advanced levels.
+            </p>
+        </section>
+
+        <section>
+            <!-- ordered list for enrolled modules -->
+            <h2>Enrolled Modules</h2>
+            <p>Below is a list of modules that are part of the curriculum for this cohort. Each module is designed to
+                equip you with essential skills in software development:</p>
+            <ol type="i">
+                <li><strong>Software Engineering Essentials</strong> - Learn the fundamentals of software engineering.
+                </li>
+                <li><strong>Web Development V2</strong> - Dive into modern web development techniques.</li>
+                <li><strong>Python Programming</strong> - Master the Python programming language.</li>
+                <li><strong>Database Design & Programming with SQL</strong> - Understand database concepts and SQL.</li>
+                <li><strong>Startup Building for Developers</strong> - Gain insights into building and managing
+                    startups.</li>
+            </ol>
+        </section>
+        <section>
+            <!-- 2024 graduate portrait -->
+            <h2>Our 2024 Graduates</h2>
+            <img src="photo/pexels-emily-ranquist-493228-1205651.jpg" alt="Graduates" width="600">
+        </section>
+
+        <section>
+            <!-- contacts table -->
+            <h3>Contact List</h3>
+            <table border="5">
+                <thead>
+                    <tr>
+                        <th>NAME & SURNAME</th>
+                        <th>ADDRESS</th>
+                        <th>MOBILE</th>
+                        <th>EMAIL</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>J Cole</td>
+                        <td>New York, USA</td>
+                        <td>+27 65 432 9909</td>
+                        <td>jcole@outlook.com</td>
+                    </tr>
+                    <tr>
+                        <td>Kendrick Lamar</td>
+                        <td>Los Angeles, USA</td>
+                        <td>+27 65 567 9741</td>
+                        <td>kendricklamar@outlook.com</td>
+                    </tr>
+                    <tr>
+                        <td>Rod Wave</td>
+                        <td>Chicago, USA</td>
+                        <td>+27 66 298 0389</td>
+                        <td>rodwave@outlook.com</td>
+                    </tr>
+                    <tr>
+                        <td>Sam Smith</td>
+                        <td>Houston, USA</td>
+                        <td>+27 64 711 1929</td>
+                        <td>samsmith@outlook.com</td>
+                    </tr>
+                    <tr>
+                        <td>Tyler The Creator</td>
+                        <td>San Francisco, USA</td>
+                        <td>+27 65 432 9909</td>
+                        <td>tylerthecreator@outlook.com</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <!-- registration form -->
+            <h3>Registration Form</h3>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <!-- name field -->
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+                    <br> <br>
+
+                    <!-- email field -->
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" placeholder="Enter your email address" required>
+
+                    <br> <br>
+
+                    <!-- password -->
+                     <label for="password">Password:</label>
+                     <input type="password" name="password" id="password" placeholder="Enter a secure password" required minlength="8">
+                    <br><br>
+                    <!-- date of birth field -->
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" name="dob" id="dob" required>
+                </fieldset>
+
+                <br><br>
+
+                <fieldset>
+                    <legend>Course Preferences</legend>
+                    <!-- dropdown selection -->
+                    <label for="module">Enrolled Module:</label>
+                    <select id="module" name="module" required>
+                        <option value="">Select your favorite module</option>
+                        <option value="software">Software Engineering Essentials</option>
+                        <option value="web">Web Development</option>
+                        <option value="python">Python Programming</option>
+                        <option value="database">Database Design & Programming with SQL</option>
+                        <option value="startup">Startup Building for Developers</option>
+                    </select>
+
+                    <br><br>
+                    <!-- radio button -->
+                    <label>Which class do you normally attend:</label><br>
+                    <input type="radio" name="class" id="morning" value="morning" required>
+                    <label for="morning">Morning</label><br>
+                    <input type="radio" name="class" id="afternoon" value="afternoon">
+                    <label for="afternoon">Afternoon</label><br>
+                    <input type="radio" name="class" id="evening" value="evening">
+                    <label for="evening">Evening</label><br>
+                    <input type="radio" name="class" id="other" value="other">
+                    <label for="other">All</label>
+
+                    <br><br>
+                    <!-- checkboxes -->
+                    <label>Week Assessments you like most:</label><br>
+                    <input type="checkbox" name="assessment" id="quiz" value="quiz">
+                    <label for="quiz">Quiz</label><br>
+                    <input type="checkbox" name="assessment" id="survey" value="survey">
+                    <label for="survey">Survey</label><br>
+                    <input type="checkbox" name="assessment" id="assignment" value="assignment">
+                    <label for="assignment">Assignment</label>
+                </fieldset>
+
+                <br><br>
+
+                <!-- submit button -->
+                <button type="submit">Register</button>
+                <br><br>
+            </form>
+        </section>
+    </main>
+    <!-- ***** Main Area End ***** -->
+
+    <!-- ***** Footer Area Start ***** -->
+    <footer>August 2024 - Cohort VI Support Channel <br>
+        Join our support channel for real-time assistance, peer collaboration, and exclusive resources tailored to your
+        cohort.
+        <li><a href="#">https://academy.powerlearnprojectafrica.org/dashboard</a></li>
+
+    </footer>
+    <!-- ***** Footer Area End ***** -->
+
+</body>
+
+</html>
